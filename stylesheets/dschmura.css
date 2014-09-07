@@ -1,5 +1,5 @@
 body{
-  background-color: #bfbfbf;
+  background-color: #CABDAC;
 }
 header nav ul li{
   float: left;
@@ -21,7 +21,7 @@ header{
 
 #bio{
   float: right;
-  background-color: #fff;
+  background-color: #F5B17B;
   height: 100%;
 }
 
@@ -32,3 +32,22 @@ header{
 #blog{
 
 }
+footer{
+  font-size: 1.4em;
+}
+footer li{
+  float: left;
+  margin-right: 1em;
+}
+
+
+
+.circle {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* width and height can be anything, as long as they're equal */
+}
+
+
