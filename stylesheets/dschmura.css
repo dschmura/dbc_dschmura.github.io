@@ -29,9 +29,6 @@ header{
   width: 200px;
 }
 
-#blog{
-
-}
 footer{
   font-size: 1.4em;
 }
@@ -40,6 +37,10 @@ footer li{
   margin-right: 1em;
 }
 
+#blog{
+  margin: 4em;
+
+}
 
 
 .circle {
