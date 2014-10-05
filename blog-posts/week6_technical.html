@@ -1,0 +1,107 @@
+
+
+<html>
+  <head>
+    <title>David Chmura's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/dschmura.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    .prettyprint{
+      max-width: 85%;
+      background-color: #fff;
+    }
+
+    </style>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </head>
+  <body>
+  <header>
+      <img alt="David Chmura" src="../images/dave_chmura.jpg" >
+      <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="../blog-posts/index.html">Blog</a></li>
+         </ul>
+      </nav>
+  </header>
+
+  </section>
+
+  <section id="blog">
+  <h1>How to Cope with Variable Scope</h1>
+
+  Variable Scope
+            What kinds of variables does Ruby support? Where are they accessible? When would you use them and what makes them different?
+
+<p>My desire to write about variable scope in Ruby is, truth be told, largely due to the frequency that I initially get it wrong when writing code. And then I have to pause, and think 'Why the hell didn't that work?'. Then I correct the avoidable problem, rebuke myself gently and then move on. If I could forgo these interruptions, I think I will be a more productive, and definitely a happier programmer. </p>
+
+<p>Ruby has four variable definitions, each with a different scope and syntax. Below is a table outlining the basics.</p>
+
+
+<h2>Local Variables</h2>
+<p>Local variables start with a lowercase letter or an underscore. They can contain letters, numbers and underscores, but they always start with a lowercase letter or an underscore.</p>
+
+<p>Local variables are limited in scope. They are only accessible within the method or block where they were created. I think of them in terms of writing on the back of a napkin. It is useful for working through a problem, but you don't keep the napkin as a final product. You toss it when you are done. You certainly don't share it with others. </p>
+
+<pre class="prettyprint">
+  local_variable
+  _local_variable
+  local_variable_1
+  localVariable (**valid, but not used in Ruby by convention)
+
+</pre>
+
+<hr />
+
+<h2>Instance Variables</h2>
+<p>Instance variables always start with a single @ sign. </p>
+<p>Instance variables are available to all methods within a particular class. This allows you to structure your code such that discrete methods within your class can change the value of a the same variable. </p>
+
+<pre class="prettyprint">
+  @instance_variable
+  @Instance_Variable
+  @InstanceVariable
+
+</pre>
+
+<hr />
+
+<h2>Class Variables</h2>
+<p>Class variables always start with 2 @ signs. </p>
+<p>The analogy I use to remember when a Class Variable might be useful is the eventual standardization of the gage of railways in America after the Civil War. Prior to the end of the war, the width of the train tracks in the Norther States was different than in the SOuthern States. This caused all kinds of problems, for obvious reasons. When a Class Variable's value is changed, that change automatically propagates to all objects created from that class. (It would have been nice to be able to change all of the train cars created from the TrainCar class to use the new track gage by just changing the Class Variable.</p>
+<pre class="prettyprint">
+  @@class_variable
+  @@Class_Variable
+  @@ClassVariable
+
+</pre>
+
+<hr />
+
+<h2>Global Variables</h2>
+<p>Global variables always start with a single $ sign. They are accessible anywhere within your application. I think of Global Variables in the same way as I think of tattoos. They are kind of a big deal and should be used with caution. I am very reluctant to use them, primarily because I can't really think of any application that makes sense for them. </p>
+<p>That being said, there are several pre-defined Global variables that are useful for debugging and gathering information about your application. A table listing them is available at <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Global_Variables" target="_blank">http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Global_Variables</a></p>
+
+<pre class="prettyprint">
+  $global_variable
+  $Global_Variable
+  $GLOBAL_VARIABLE
+
+</pre>
+  </section>
+  <footer>
+
+
+  <nav>
+    <ul>
+      <li data-type="github"><a class="fa fa-github" href="https:/github.com/dschmura"></a></li>
+      <li data-type="email"><a class="fa fa-envelope" href="mailto:dschmura@humbledaisy.com?subject=feedback" "email me"></a></li>
+      <li data-type="facebook"><a class="fa fa-facebook" href="https://www.facebook.com/dschmura"></a></li>
+      <li data-type="twitter"><a class="fa fa-twitter" href="https://twitter.com/humbledaisy"></a></li>
+      <li data-type="linkedIn"><a class="fa fa-linkedin" href="http://lnkd.in/VuU9xY"></a></li>
+    </ul>
+  </nav>
+ </footer>
+  </body>
