@@ -1,0 +1,79 @@
+
+
+<html>
+  <head>
+    <title>David Chmura's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/dschmura.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+    .prettyprint{
+      max-width: 85%;
+      background-color: #fff;
+    }
+
+    </style>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  </head>
+  <body>
+  <header>
+      <img alt="David Chmura" src="../images/dave_chmura.jpg" >
+      <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="../blog-posts/index.html">Blog</a></li>
+         </ul>
+      </nav>
+  </header>
+
+
+
+  <section id="blog">
+  <h1>A few good shortcuts</h1>
+  <p>Here are a few good shortcuts I have learned for Ruby</p>
+
+
+<hr />
+
+<h2>Arrays</h2>
+<p>Arrays are great for storing secquenced data. </p>
+
+<pre class="prettyprint">
+  array = [1, 2, 3]
+  array_strings = ["First", "Second", "Third"]
+  array_shortcut = %w[First, Second, Third]
+  #To call an element in an array
+  array_shortcut[2]
+</pre>
+
+
+<h2>Hashes</h2>
+<p>Hashes handle key-value paring really well.</p>
+
+<pre class="prettyprint">
+  hash = {"first" => "first_value", "second" => "second_value"}
+  hash_symbols = {first: "first_value", second: "second_value"}
+  #To call an element in a hash
+  hash_symbols[:first]
+</pre>
+
+
+
+
+
+  </section>
+  <footer>
+
+
+  <nav>
+    <ul>
+      <li data-type="github"><a class="fa fa-github" href="https:/github.com/dschmura"></a></li>
+      <li data-type="email"><a class="fa fa-envelope" href="mailto:dschmura@humbledaisy.com?subject=feedback" "email me"></a></li>
+      <li data-type="facebook"><a class="fa fa-facebook" href="https://www.facebook.com/dschmura"></a></li>
+      <li data-type="twitter"><a class="fa fa-twitter" href="https://twitter.com/humbledaisy"></a></li>
+      <li data-type="linkedIn"><a class="fa fa-linkedin" href="http://lnkd.in/VuU9xY"></a></li>
+    </ul>
+  </nav>
+ </footer>
+  </body>
