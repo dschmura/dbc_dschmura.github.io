@@ -59,7 +59,57 @@
 </pre>
 
 
+<h2>Evaluations</h2>
+<p>If it is answers you seek, ask the right questions.</p>
 
+<p>The venerable if else</p>
+
+<pre class="prettyprint">
+  variable = "yes"
+  if variable == "yes"
+    puts "this is true"
+  elsif variable == "no"
+    puts "This is false"
+  else
+    puts "Maybe?"
+  end
+</pre>
+
+<p>A prettier form</p>
+<pre class="prettyprint">
+  puts "This is an if" if true
+</pre>
+
+<p>Unless is a nice twist</p>
+<pre class="prettyprint">
+  puts "This is an unless" unless false
+</pre>
+
+<p>This is taking a ternary for the worst</p>
+<pre class="prettyprint">
+  puts 1 > 0 ? "This is true" : "This is false"
+</pre>
+
+
+<p>Whatever the CASE may be</p>
+<pre class="prettyprint">
+  puts "Hello there!"
+  greeting = gets.chomp
+
+  # Add your case statement below!
+  case greeting
+    when "English" then puts "Hello!"
+    when "French" then puts "Bonjour!"
+    when "German" then puts "Guten Tag!"
+    when "Finnish" then puts "Haloo!"
+    else puts "I don't know that language"
+  end
+</pre>
+
+<p>This nifty short cut assigns a value unless one already exists.</p>
+<pre class="prettyprint">
+  favorite_language ||= "Ruby"
+</pre>
 
 
   </section>
